@@ -123,8 +123,8 @@ There are some configuration options available in this theme, you can customize 
 **A:** The `italicKeywords` is designed to use with fonts that support cursive italic styles. To enable this feature:
 
 1. Install a font that supports cursive italic styles, for example: https://aka.sainnhe.dev/fonts
-2. Set the `everforest.italicKeywords` option to `true` in user settings.
-3. (optional) Set the `everforest.italicComments` option to `false` in user settings.
+2. Set the `eris.italicKeywords` option to `true` in user settings.
+3. (optional) Set the `eris.italicComments` option to `false` in user settings.
 
 ## Credits
 

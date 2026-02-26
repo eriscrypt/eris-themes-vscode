@@ -1,5 +1,5 @@
 /*---------------------------------------------------------------
- *  Homepage:   https://github.com/sainnhe/everforest-vscode
+ *  Homepage:   https://github.com/eriscrypt/eris-themes-vscode
  *  Copyright:  2020 Sainnhe Park <i@sainnhe.dev>
  *  License:    MIT
  *--------------------------------------------------------------*/
@@ -15,9 +15,9 @@ export function activate() {
   workspace.onDidChangeConfiguration((event) => {
     utils.detectConfigChanges(event, () => {
       utils.generate(
-        join(__dirname, "..", "themes", "everforest-dark.json"),
-        join(__dirname, "..", "themes", "everforest-light.json"),
-        utils.getThemeData(utils.getConfiguration())
+        join(__dirname, "..", "themes", "eris-dark.json"),
+        join(__dirname, "..", "themes", "eris-light.json"),
+        utils.getThemeData(utils.getConfiguration()),
       );
     });
   });
@@ -28,9 +28,9 @@ export function activate() {
     !utils.isDefaultConfiguration(utils.getConfiguration())
   ) {
     utils.generate(
-      join(__dirname, "..", "themes", "everforest-dark.json"),
-      join(__dirname, "..", "themes", "everforest-light.json"),
-      utils.getThemeData(utils.getConfiguration())
+      join(__dirname, "..", "themes", "eris-dark.json"),
+      join(__dirname, "..", "themes", "eris-light.json"),
+      utils.getThemeData(utils.getConfiguration()),
     );
   }
 }

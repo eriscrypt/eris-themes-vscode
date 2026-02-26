@@ -45,28 +45,28 @@
       {
         "label": "Eris Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/everforest-dark.json"
+        "path": "./themes/eris-dark.json"
       },
       {
         "label": "Eris Light",
         "uiTheme": "vs",
-        "path": "./themes/everforest-light.json"
+        "path": "./themes/eris-light.json"
       },
       {
         "label": "Eris Dark Vibrant",
         "uiTheme": "vs-dark",
-        "path": "./themes/everforest-dark-vibrant.json"
+        "path": "./themes/eris-dark-vibrant.json"
       },
       {
-        "label": "Everforest Light Vibrant",
+        "label": "Eris Light Vibrant",
         "uiTheme": "vs",
-        "path": "./themes/everforest-light-vibrant.json"
+        "path": "./themes/eris-light-vibrant.json"
       }
     ],
     "configuration": {
       "title": "Eris Themes",
       "properties": {
-        "everforest.darkContrast": {
+        "eris.darkContrast": {
           "type": "string",
           "default": "medium",
           "description": "Background contrast for the dark variant.",
@@ -76,7 +76,7 @@
             "hard"
           ]
         },
-        "everforest.lightContrast": {
+        "eris.lightContrast": {
           "type": "string",
           "default": "medium",
           "description": "Background contrast for the light variant.",
@@ -86,7 +86,7 @@
             "hard"
           ]
         },
-        "everforest.darkWorkbench": {
+        "eris.darkWorkbench": {
           "type": "string",
           "default": "material",
           "description": "Workbench style for the dark variant.",
@@ -96,7 +96,7 @@
             "high-contrast"
           ]
         },
-        "everforest.lightWorkbench": {
+        "eris.lightWorkbench": {
           "type": "string",
           "default": "material",
           "description": "Workbench style for the light variant.",
@@ -106,7 +106,7 @@
             "high-contrast"
           ]
         },
-        "everforest.darkCursor": {
+        "eris.darkCursor": {
           "type": "string",
           "default": "white",
           "description": "The cursor color in the dark variant.",
@@ -121,7 +121,7 @@
             "purple"
           ]
         },
-        "everforest.lightCursor": {
+        "eris.lightCursor": {
           "type": "string",
           "default": "black",
           "description": "The cursor color in the light variant.",
@@ -136,7 +136,7 @@
             "purple"
           ]
         },
-        "everforest.darkSelection": {
+        "eris.darkSelection": {
           "type": "string",
           "default": "grey",
           "description": "The background color of selected text in the dark variant.",
@@ -151,7 +151,7 @@
             "purple"
           ]
         },
-        "everforest.lightSelection": {
+        "eris.lightSelection": {
           "type": "string",
           "default": "grey",
           "description": "The background color of selected text in the light variant.",
@@ -166,17 +166,17 @@
             "purple"
           ]
         },
-        "everforest.italicKeywords": {
+        "eris.italicKeywords": {
           "type": "boolean",
           "default": false,
           "description": "Italicize keywords or not."
         },
-        "everforest.italicComments": {
+        "eris.italicComments": {
           "type": "boolean",
           "default": true,
           "description": "Italicize comments or not."
         },
-        "everforest.diagnosticTextBackgroundOpacity": {
+        "eris.diagnosticTextBackgroundOpacity": {
           "type": "string",
           "default": "0%",
           "markdownDescription": "The opacity of the background color of [diagnostic text](https://code.visualstudio.com/updates/v1_52#_error-background-colors).",
@@ -188,7 +188,7 @@
             "50%"
           ]
         },
-        "everforest.highContrast": {
+        "eris.highContrast": {
           "type": "boolean",
           "default": false,
           "description": "Whether to add an additional border around items across the UI to increase the contrast."
@@ -198,11 +198,11 @@
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
-    "clean": "rimraf dist *.vsix",
+    "clean": "rimraf dist",
     "compile:ts": "tsc",
     "compile:themes": "node dist/hook/generateThemes.js",
     "compile": "npm run clean && npm run compile:ts && npm run compile:themes",
-    "package": "vsce package && git checkout -- themes",
+    "package": "vsce package",
     "lint": "eslint . --ext .ts",
     "browser": "vscode-test-web --browserType=chromium --extensionDevelopmentPath=. .",
     "prepare": "husky install"

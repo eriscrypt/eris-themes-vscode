@@ -1,6 +1,6 @@
 # Change Log
 
-All notable changes to the "everforest" extension will be documented in this file.
+All notable changes to the "eris" extension will be documented in this file.
 
 ## 0.3.0
 
@@ -17,7 +17,7 @@ All notable changes to the "everforest" extension will be documented in this fil
 
 ## 0.1.6
 
-- Add new option `everforest.highContrast`.
+- Add new option `eris.highContrast`.
 - Add some new theme tokens.
 
 ## 0.1.5

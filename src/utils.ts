@@ -1,5 +1,5 @@
 /*---------------------------------------------------------------
- *  Homepage:   https://github.com/sainnhe/everforest-vscode
+ *  Homepage:   https://github.com/eriscrypt/eris-themes-vscode
  *  Copyright:  2020 Sainnhe Park <i@sainnhe.dev>
  *  License:    MIT
  *--------------------------------------------------------------*/
@@ -16,15 +16,15 @@ export default class Utils {
   detectConfigChanges(
     // {{{
     event: ConfigurationChangeEvent,
-    onConfigChange: () => void
+    onConfigChange: () => void,
   ): void {
-    if (event.affectsConfiguration("everforest")) {
+    if (event.affectsConfiguration("eris")) {
       onConfigChange();
     }
   } // }}}
   getConfiguration(): Configuration {
     // {{{
-    const workspaceConfiguration = workspace.getConfiguration("everforest");
+    const workspaceConfiguration = workspace.getConfiguration("eris");
     return {
       darkContrast: workspaceConfiguration.get<string>("darkContrast"),
       lightContrast: workspaceConfiguration.get<string>("lightContrast"),
@@ -37,7 +37,7 @@ export default class Utils {
       italicKeywords: workspaceConfiguration.get<boolean>("italicKeywords"),
       italicComments: workspaceConfiguration.get<boolean>("italicComments"),
       diagnosticTextBackgroundOpacity: workspaceConfiguration.get<string>(
-        "diagnosticTextBackgroundOpacity"
+        "diagnosticTextBackgroundOpacity",
       ),
       highContrast: workspaceConfiguration.get<boolean>("highContrast"),
     };
@@ -63,7 +63,7 @@ export default class Utils {
     // {{{
     return {
       dark: {
-        name: "Everforest Dark",
+        name: "Eris Dark",
         type: "dark",
         semanticHighlighting: true,
         semanticTokenColors: getSemantic(configuration, "dark"),
@@ -71,7 +71,7 @@ export default class Utils {
         tokenColors: getSyntax(configuration, "dark"),
       },
       light: {
-        name: "Everforest Light",
+        name: "Eris Light",
         type: "light",
         semanticHighlighting: true,
         semanticTokenColors: getSemantic(configuration, "light"),
@@ -94,7 +94,7 @@ export default class Utils {
     // {{{
     return new Promise((resolve, reject) => {
       fs.writeFile(path, JSON.stringify(data, null, 2), (err) =>
-        err ? reject(err) : resolve("Success")
+        err ? reject(err) : resolve("Success"),
       );
     });
   } // }}}

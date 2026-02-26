@@ -1,5 +1,5 @@
 /*---------------------------------------------------------------------------------------------
- *  Homepage:   https://github.com/sainnhe/everforest-vscode
+ *  Homepage:   https://github.com/eriscrypt/eris-themes-vscode
  *  Copyright:  2020 Sainnhe Park <i@sainnhe.dev>
  *  License:    MIT
  *--------------------------------------------------------------------------------------------*/
@@ -16,7 +16,7 @@ class Utils {
     // {{{
     return new Promise((resolve, reject) => {
       fs.writeFile(path, JSON.stringify(data, null, 2), (err) =>
-        err ? reject(err) : resolve("Success")
+        err ? reject(err) : resolve("Success"),
       );
     });
   } // }}}
@@ -29,7 +29,7 @@ class Utils {
     // {{{
     return {
       dark: {
-        name: "Everforest Dark",
+        name: "Eris Dark",
         type: "dark",
         semanticHighlighting: true,
         semanticTokenColors: getSemantic(configuration, "dark"),
@@ -37,7 +37,7 @@ class Utils {
         tokenColors: getSyntax(configuration, "dark"),
       },
       light: {
-        name: "Everforest Light",
+        name: "Eris Light",
         type: "light",
         semanticHighlighting: true,
         semanticTokenColors: getSemantic(configuration, "light"),
@@ -65,9 +65,9 @@ const configuration: Configuration = {
 };
 
 utils.generate(
-  join(__dirname, "..", "..", "themes", "everforest-dark.json"),
-  join(__dirname, "..", "..", "themes", "everforest-light.json"),
-  utils.getThemeData(configuration)
+  join(__dirname, "..", "..", "themes", "eris-dark.json"),
+  join(__dirname, "..", "..", "themes", "eris-light.json"),
+  utils.getThemeData(configuration),
 );
 
 // vim: fdm=marker fmr={{{,}}}:
