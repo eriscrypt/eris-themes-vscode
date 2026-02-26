@@ -1,17 +1,17 @@
 {
-  "name": "everforest",
-  "displayName": "Everforest",
+  "name": "eris-themes",
+  "displayName": "Eris Themes",
   "description": "Comfortable & Pleasant Color Scheme for Visual Studio Code",
-  "version": "0.3.0",
-  "publisher": "sainnhe",
-  "author": "sainnhe (https://github.com/sainnhe)",
-  "homepage": "https://github.com/sainnhe/everforest-vscode",
+  "version": "1.0.0",
+  "publisher": "eriscrypt",
+  "author": "eriscrypt (eriscrypt@gmail.com)",
+  "homepage": "https://github.com/eriscrypt/eris-themes-vscode",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sainnhe/everforest-vscode.git"
+    "url": "https://github.com/eriscrypt/eris-themes-vscode.git"
   },
   "bugs": {
-    "url": "https://github.com/sainnhe/everforest-vscode/issues"
+    "url": "https://github.com/eriscrypt/eris-themes-vscode/issues"
   },
   "license": "MIT",
   "keywords": [
@@ -43,18 +43,28 @@
   "contributes": {
     "themes": [
       {
-        "label": "Everforest Dark",
+        "label": "Eris Dark",
         "uiTheme": "vs-dark",
         "path": "./themes/everforest-dark.json"
       },
       {
-        "label": "Everforest Light",
+        "label": "Eris Light",
         "uiTheme": "vs",
         "path": "./themes/everforest-light.json"
+      },
+      {
+        "label": "Eris Dark Vibrant",
+        "uiTheme": "vs-dark",
+        "path": "./themes/everforest-dark-vibrant.json"
+      },
+      {
+        "label": "Everforest Light Vibrant",
+        "uiTheme": "vs",
+        "path": "./themes/everforest-light-vibrant.json"
       }
     ],
     "configuration": {
-      "title": "Everforest",
+      "title": "Eris Themes",
       "properties": {
         "everforest.darkContrast": {
           "type": "string",
