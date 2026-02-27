@@ -2,6 +2,10 @@
 
 All notable changes to the "eris" extension will be documented in this file.
 
+## 1.0.1
+
+- Set extension icon from `icon.png`.
+
 ## 0.3.0
 
 - Change `activationEvents`.

@@ -2,7 +2,7 @@
   "name": "eris-themes",
   "displayName": "Eris Themes",
   "description": "Comfortable & Pleasant Color Scheme for Visual Studio Code",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "eriscrypt",
   "author": "eriscrypt (eriscrypt@gmail.com)",
   "homepage": "https://github.com/eriscrypt/eris-themes-vscode",
@@ -25,6 +25,7 @@
   "categories": [
     "Themes"
   ],
+  "icon": "icon.png",
   "extensionKind": [
     "ui",
     "workspace"
